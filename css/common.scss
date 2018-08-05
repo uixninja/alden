@@ -1,0 +1,258 @@
+@import 'mixins';
+@import 'fonts';
+
+
+body {
+    line-height: 13px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+img {
+    outline: none;
+    border: none;
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+html, 
+body {
+    margin:0; 
+    padding:0; 
+    height:100%;
+    font-size: 11px;
+    font-family: "Comfortaa", Arial, Verdana, sans-serif;    
+}
+
+.container {
+    position: relative;	
+    min-height:100%;
+}
+
+* {
+    margin:0px; 
+    padding:0px;
+}
+
+.centered {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+.hidden {
+    opacity: 0 !important;
+}
+
+.visible {
+    opacity: 1 !important;
+}
+
+.btn {
+    height: 56px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 56px;
+    color: #dee2ee;
+    text-transform: uppercase;
+
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 56px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    &:after {
+        @include gradient-top(#576cff, #576cff);
+        box-shadow: inset 0px 2px 0px 0px rgba(104, 127, 255, 1);
+        z-index: 1;
+        border-radius: 15px;
+    }
+
+    &:before {
+        border-radius: 15px;
+        box-sizing: border-box;
+        @include gradient-top(#576cff, #4e9dff);
+        @include box-shadow(inset 0px 2px 0px 0px rgba(104, 127, 255, 1));
+        box-shadow: inset 0px 2px 0px 0px rgba(104, 127, 255, 1), inset 0px -2px 0px 0px rgba(73, 152, 255, 1);
+        transition: 0.5s opacity;
+    }
+
+    &.pink {
+        &:after {
+            @include gradient-top(#eb59a1, #eb59a1);
+            box-shadow: inset 0px 2px 0px 0px #ef6bb4;
+        }
+    
+        &:before {
+            @include gradient-top(#eb59a1, #f687a7);
+            @include box-shadow(inset 0px 2px 0px 0px #ef6bb4,);
+            box-shadow: inset 0px 2px 0px 0px #ef6bb4, inset 0px -2px 0px 0px #f687a7;
+        }
+
+        &:active {
+            &:after {
+                background: #dd4991;
+            }
+        }
+    }
+
+    span {
+        height: 56px;
+        line-height: 56px;
+        display: inline-block;
+        padding: 0 39px;
+        position: relative;
+        z-index: 3;
+    }
+    
+    &:hover {
+        &:before {
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        &:after {
+            background: #4b62ff;
+        }
+    }
+}
+
+.end_content {
+    position: relative;
+    height: 240px;
+    clear: both;    
+}
+
+h1 {
+    width: 100%;
+    font-weight: 400;
+    color: #dee2ee;
+    font-size: 42px;
+    line-height: 100%;
+    text-align: center;
+}
+
+ h2 {
+     float: left;
+     width: 100%;
+     text-align: center;
+     color: #dfdeee;
+     font-size: 37px;
+     font-weight: 300;
+     line-height: 100%;
+     margin-top: -55px;
+     padding-bottom: 15px;
+}
+
+.explanation {
+    position: relative;
+    max-width: 992px;
+    margin: 0 auto;
+    text-align: center;
+    color: #b1b6eb;
+    font-size: 17px;
+    line-height: 200%;
+    padding-top: 20px;
+
+    .picture {
+        padding-top: 30px;
+    }
+}
+
+.btn_color {
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 7px;
+    @include gradient(#0b57f6, #72d1ff);
+    width: 148px;
+    height: 47px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+    
+    span {
+        margin: 2px;
+        height: 43px;
+        float: left;
+        width: 144px;
+        border-radius: 5px;
+        line-height: 43px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+    }
+
+    &:before {
+        content: "";
+        width: 144px;
+        height: 43px;
+        top: 2px;
+        left: 2px;
+        position: absolute;
+        @include gradient(#1175fe, #57c2ff);
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:after {
+        content: "";
+        width: 144px;
+        height: 43px;
+        top: 2px;
+        left: 2px;
+        position: absolute;
+        @include gradient(#1977f7, #1e8ff7);
+        border-radius: 5px;
+        z-index: 2;
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    &:hover {
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
+.animation {
+    position: relative;
+    text-align: center;
+
+    img {
+        float: none;
+        display: inline-block;
+    }
+}
+
+@import 'responsive';

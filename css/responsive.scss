@@ -1,0 +1,517 @@
+@media (max-width: 1350px) {
+    .platform {
+        max-width: 1140px;
+        margin: 0 auto;
+
+        .animation {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    .how_it_works {
+        .centered {
+            max-width: 785px;
+        }
+
+        &.inverse .carousel {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 1260px) {
+    .about .picture {
+        width: 550px;
+        height: auto;
+        margin-left: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .roadmap .map .item .dashboard {
+        padding-left: 550px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .stage_1 {
+        .text {
+            padding-top: 80px;
+        }
+
+        .picture {
+            margin-right: 0;
+            width: 500px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .about .text {
+        width: 400px;
+        padding-top: 140px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .stage_1 {
+        .text {
+            width: 400px;
+        }
+    }
+
+    .about .picture {
+        width: 500px;
+    }
+
+    .advantages, .team {
+        .items > div {
+            padding-top: 100px;
+
+            .info {
+                padding-right: 20px;
+    
+                h3 {
+                    line-height: 120%;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 999px) {
+     header {
+         .responsive_menu {
+             display: block;
+         }
+
+         ul {
+             float: left;
+             width: 100%;
+             padding: 0;
+             margin-top: 50px;
+
+             li {
+                 width: 100%;
+             }
+         }
+
+         .btn {
+             margin-top: 20px;
+             float: none;
+             margin-bottom: 30px;
+
+             span {
+                 width: auto;
+             }
+         }
+
+         .fade {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #161a2e;
+            z-index: 1;
+            opacity: 0;
+            transition: 2s opacity;
+    
+            &.in {
+                width: 100%;
+                height: 100%;
+                display: block;
+                opacity: .9;
+            }
+        }
+
+         .side {
+             width: 270px;
+             right: -300px;
+             background: #1c2445;
+             top: 0;
+             z-index: 1;
+             text-align: center;
+             transition: all 0.5s;
+             opacity: 0;
+             height: 100%;
+             bottom: 0;
+             overflow-y: scroll;
+             position: fixed;
+
+             &.show {
+                right: -30px;
+                opacity: 1;
+            }
+         }
+     }
+
+     .stage_1 {
+         padding-top: 80px;
+
+        .text {
+            width: 100%;
+            padding-bottom: 50px;
+
+            h1, .explanation, .actions {
+                text-align: center;
+            }
+        }
+
+        .picture {
+            width: 500px;
+            float: none;
+            margin: 0 auto;
+        }
+
+        &.stage_2 {
+            padding-top: 0;
+
+            .text {
+                float: none;
+                margin: 0 auto;
+                padding-top: 60px;
+            }
+
+            .picture {
+                width: 500px;
+                float: none;
+                margin: 0 auto;
+                height: auto;
+            }
+        }
+    }
+
+    .about {
+        .picture {
+            width: 500px;
+            margin: 0 auto;
+            float: none;
+        }
+
+        .text {
+            width: 100%;
+
+            h1, .explanation, .story {
+                text-align: center;
+            }
+        }
+    }
+
+    .advantages,
+    .team {
+        .items {
+            margin: 0 auto;
+            width: 600px;
+
+            > div {
+                width: 100%;
+                padding-top: 60px;
+            }            
+        }
+    }
+
+    .team .items > div:nth-child(2n) {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 940px) {
+   
+}
+
+@media (max-width: 880px) {
+    .faq {
+        padding-top: 90px;
+    }
+
+    .roadmap {
+        padding-top: 70px;
+
+        .map {
+            padding-top: 0;
+            
+            &:before, &:after {
+                display: none;
+            }
+    
+            .item {
+                &:before, &:after {
+                    display: none;
+                }
+        
+                .text {
+                    padding-left: 0;
+                    width: 100%;
+                }
+        
+                .arrow {
+                    display: none;
+                }
+
+                .dashboard {
+                    padding-left: 0;
+
+                    > img:nth-child(2n) {
+                        margin-right: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .how_it_works {
+        .centered {
+            max-width: 685px;
+        }
+
+        .text {
+            width: 315px;
+        }
+
+        .carousel {
+            padding-left: 360px;
+        }
+
+        &.inverse {
+            .carousel {
+                padding-left: 0;
+                padding-right: 360px;
+            }
+        }
+    }
+
+    .roadmap {
+        .left_col {
+            width: 100%;
+        }
+
+        .tabs {
+            width: 100%;
+            padding-top: 30px;
+            float: left;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .how_it_works {
+        .text {
+            width: 100%;
+
+            h1, .explanation {
+                text-align: center;
+            }
+        }
+
+        .centered {
+            padding-top: 70px;
+        }
+
+        .carousel {
+            position: relative;
+            padding: 40px 0 0 0;
+            width: 325px;
+            margin: 0 auto !important;
+            overflow: hidden;
+
+            .bx-wrapper {
+                margin-right: -15px;
+            }
+        }
+
+        &.inverse {
+            .carousel {
+                padding-right: 0;
+                padding-top: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .advantages, .team {
+        padding-top: 70px;
+
+        .items {
+            width: 100%;
+        }
+    }
+
+    .team {
+        .items {
+            > div {
+                .icon {
+                    width: 165px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .info {
+                    margin-left: 195px;
+                    padding-left: 0 !important;
+                    min-height: auto;
+                }
+
+                .social {
+                    position: relative;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .explanation {
+        font-size: 15px;
+    }
+
+    .platform {
+        padding: 60px 20px 0 20px;
+        box-sizing: border-box;
+
+        .social {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .stage_1, .stage_2 {
+        .picture, .text {
+            width: 100% !important;
+        }
+    }
+
+    .stage_2 {
+        .text {
+            .email, .actions {
+                width: 100%;
+            }
+        }
+    }
+
+    .about .text {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    .about .picture {
+        width: 100%;
+    }
+
+    .advantages {
+        .items {
+            width: 100%;
+
+            > div {
+                .icon {
+                    width: 150px;
+
+                    img {
+                        width: 80%;
+                    }
+                }
+
+                .info {
+                    padding-left: 160px;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .faq .centered .item {
+        padding-right: 40px;
+
+        .head h3 {
+            padding: 4px 0 0 60px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .stage_1 .text .actions {
+        padding-top: 5px;
+
+        .btn {
+            margin: 30px 30px 0 30px;
+            width: 185px;
+        }
+    }
+
+    .advantages, .team {
+        .items {
+            > div {
+                .icon {
+                    width: 110px;
+
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                .info {
+                    padding-left: 120px;
+
+                    h3 {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .team {
+        .items {
+            > div {
+                .info {
+                    padding-left: 0;
+                    margin-left: 130px;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    .roadmap .tabs li {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .how_it_works .carousel {
+        width: 290px;
+
+        .bx-controls {
+            left: 190px;
+        }
+
+        ul li {
+            width: 190px !important;
+        }
+    }
+}

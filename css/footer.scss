@@ -1,0 +1,50 @@
+footer {
+    position: relative; 
+    padding-bottom: 45px;
+    height: 96px;
+    box-sizing: border-box;
+    margin-top: -96px;
+    @include gradient-top(#43b5ff, #644bff);
+
+    h6 {
+        float: left;
+        width: 250px;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Comfortaa';
+        line-height: 96px;
+    }
+
+    .social {
+        padding-top: 39px;
+        float: right;
+        width: 180px;
+
+        img {
+            margin-left: 24px;
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        .social {
+            float: left;
+            width: 100%;
+            text-align: center;
+            padding-top: 18px;
+
+            img {
+                margin: 0 12px;
+            }
+        }
+
+        h6 {
+            width: 100%;
+            text-align: center;
+            line-height: 100%;
+            padding-top: 25px;
+        }
+    }
+}
