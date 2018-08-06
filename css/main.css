@@ -85,28 +85,7 @@ header {
         margin-left: 20px; }
   .stage_1 .picture {
     float: right;
-    margin-right: -80px;
-    width: 722px;
-    position: relative;
-    overflow: hidden; }
-    .stage_1 .picture img {
-      z-index: 1;
-      left: 0;
-      top: 0;
-      position: absolute; }
-      .stage_1 .picture img:nth-child(1) {
-        z-index: 1;
-        position: relative; }
-      .stage_1 .picture img:nth-child(2) {
-        z-index: 2; }
-      .stage_1 .picture img:nth-child(3) {
-        z-index: 3; }
-      .stage_1 .picture img:nth-child(4) {
-        z-index: 4; }
-      .stage_1 .picture img:nth-child(5) {
-        z-index: 5; }
-      .stage_1 .picture img:nth-child(6) {
-        z-index: 6; }
+    margin-right: -80px; }
   .stage_1.stage_2 .text {
     float: right;
     width: 500px;
@@ -211,30 +190,10 @@ header {
     width: 765px;
     height: 627px;
     float: left;
-    margin-top: 70px;
-    margin-left: -130px;
-    position: relative;
-    overflow: hidden; }
+    padding-top: 70px;
+    margin-left: -130px; }
     .about .picture img {
-      z-index: 1;
-      left: 0;
-      top: 0;
-      position: absolute; }
-      .about .picture img:nth-child(1) {
-        z-index: 1;
-        position: relative; }
-      .about .picture img:nth-child(2) {
-        z-index: 2;
-        animation-duration: 3s; }
-      .about .picture img:nth-child(3) {
-        z-index: 3;
-        animation-duration: 1.5s; }
-      .about .picture img:nth-child(4) {
-        z-index: 4;
-        animation-duration: 2s; }
-      .about .picture img:nth-child(5) {
-        z-index: 5;
-        animation-duration: 2.5s; }
+      float: left; }
 
 .advantages,
 .team {
@@ -333,7 +292,7 @@ header {
       padding: 0px 65px 0 40px;
       margin-top: 40px;
       border-radius: 22px;
-      transition: 1s all; }
+      transition: .3s all; }
       .faq .centered .item.active {
         background: #252e59;
         padding-top: 40px;
