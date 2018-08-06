@@ -32,4 +32,10 @@ $(document).ready(function(){
         classToAdd: 'visible animated fadeInUp',
         offset: 10
     });
+
+    $('.tabs li a').on('click', function(){
+        $(this).closest('ul').find('li a').removeClass('active');
+        $(this).closest('li a').addClass('active');
+        return false;
+    });
 });

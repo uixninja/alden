@@ -36,9 +36,26 @@ header {
                 text-decoration: none;
                 line-height: 56px;
                 margin: 0 14px;
+                padding: 15px 0;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    width: 0;
+                    height: 2px;
+                    background: #4b7dff;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transition: 0.5s width;
+                }
 
                 &:hover {
-                    border-bottom: 2px solid #8288cc;
+                    color: #4b7dff;
+                    
+                    &:before {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -494,10 +511,25 @@ header {
                 line-height: 110%;
                 text-transform: uppercase;
                 padding: 15px 0;
+                position: relative;
 
-                &.active {
+                &:before {
+                    content: "";
+                    width: 0;
+                    height: 2px;
+                    background: #4b7dff;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transition: 0.5s width;
+                }
+
+                &:hover, &.active {
                     color: #4b7dff;
-                    border-bottom: 2px solid #4b7dff;
+                    
+                    &:before {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -665,31 +697,60 @@ header {
                         }
 
                         &.fb {
+                            &:hover {
+                                &:before {
+                                    @include gradient-top(#42b7ff, #5343ff);
+                                }
+                            }
+
                             &:after {
                                 background-image: url('../img/fb_social.png');
                             }
-
                         }
 
                         &.pdf {
+                            &:hover {
+                                &:before {
+                                    @include gradient-top(#f9c49c, #eb675a);
+                                }
+                            }
+
                             &:after {
                                 background-image: url('../img/pdf_social.png');
                             }
                         }
 
                         &.youtube {
+                            &:hover {
+                                &:before {
+                                    @include gradient-top(#ffacac, #e3369b);
+                                }
+                            }
+
                             &:after {
                                 background-image: url('../img/youtube_social.png');
                             }
                         }
 
                         &.linkedin {
+                            &:hover {
+                                &:before {
+                                    @include gradient-top(#aaf37d, #00aaa4);
+                                }
+                            }
+
                             &:after {
                                 background-image: url('../img/linkedin_social.png');
                             }
                         }
 
                         &.git {
+                            &:hover {
+                                &:before {
+                                    @include gradient-top(#cd35ab, #5e38f8);
+                                }
+                            }
+
                             &:after {
                                 background-image: url('../img/git_social.png');
                             }

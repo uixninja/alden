@@ -27,9 +27,22 @@ header {
         color: #8288cc;
         text-decoration: none;
         line-height: 56px;
-        margin: 0 14px; }
+        margin: 0 14px;
+        padding: 15px 0;
+        position: relative; }
+        header ul li a:before {
+          content: "";
+          width: 0;
+          height: 2px;
+          background: #4b7dff;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transition: 0.5s width; }
         header ul li a:hover {
-          border-bottom: 2px solid #8288cc; }
+          color: #4b7dff; }
+          header ul li a:hover:before {
+            width: 100%; }
   header .btn {
     float: right;
     margin-top: -56px; }
@@ -355,10 +368,21 @@ header {
         color: #fff;
         line-height: 110%;
         text-transform: uppercase;
-        padding: 15px 0; }
-        .roadmap .tabs li a.active {
-          color: #4b7dff;
-          border-bottom: 2px solid #4b7dff; }
+        padding: 15px 0;
+        position: relative; }
+        .roadmap .tabs li a:before {
+          content: "";
+          width: 0;
+          height: 2px;
+          background: #4b7dff;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transition: 0.5s width; }
+        .roadmap .tabs li a:hover, .roadmap .tabs li a.active {
+          color: #4b7dff; }
+          .roadmap .tabs li a:hover:before, .roadmap .tabs li a.active:before {
+            width: 100%; }
   .roadmap .map {
     position: relative;
     margin-top: 85px;
@@ -500,14 +524,59 @@ header {
               background: -ms-linear-gradient(left, #feaaab 0%, #e4399b 100%);
               background: linear-gradient(to bottom, #feaaab 0%, #e4399b 100%);
               filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color_start, endColorstr=$color_end, GradientType=1 ); }
+            .roadmap .map .item .dashboard .icons a.fb:hover:before {
+              background: #42b7ff;
+              background: -moz-linear-gradient(top, #42b7ff, #5343ff 100%);
+              background: -webkit-gradient(left top, left bottom, color-stop(0%, #42b7ff), color-stop(100%, #5343ff));
+              background: -webkit-linear-gradient(left, #42b7ff 0%, #5343ff 100%);
+              background: -o-linear-gradient(left, #42b7ff 0%, #5343ff 100%);
+              background: -ms-linear-gradient(left, #42b7ff 0%, #5343ff 100%);
+              background: linear-gradient(to bottom, #42b7ff 0%, #5343ff 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color_start, endColorstr=$color_end, GradientType=1 ); }
             .roadmap .map .item .dashboard .icons a.fb:after {
               background-image: url("../img/fb_social.png"); }
+            .roadmap .map .item .dashboard .icons a.pdf:hover:before {
+              background: #f9c49c;
+              background: -moz-linear-gradient(top, #f9c49c, #eb675a 100%);
+              background: -webkit-gradient(left top, left bottom, color-stop(0%, #f9c49c), color-stop(100%, #eb675a));
+              background: -webkit-linear-gradient(left, #f9c49c 0%, #eb675a 100%);
+              background: -o-linear-gradient(left, #f9c49c 0%, #eb675a 100%);
+              background: -ms-linear-gradient(left, #f9c49c 0%, #eb675a 100%);
+              background: linear-gradient(to bottom, #f9c49c 0%, #eb675a 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color_start, endColorstr=$color_end, GradientType=1 ); }
             .roadmap .map .item .dashboard .icons a.pdf:after {
               background-image: url("../img/pdf_social.png"); }
+            .roadmap .map .item .dashboard .icons a.youtube:hover:before {
+              background: #ffacac;
+              background: -moz-linear-gradient(top, #ffacac, #e3369b 100%);
+              background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffacac), color-stop(100%, #e3369b));
+              background: -webkit-linear-gradient(left, #ffacac 0%, #e3369b 100%);
+              background: -o-linear-gradient(left, #ffacac 0%, #e3369b 100%);
+              background: -ms-linear-gradient(left, #ffacac 0%, #e3369b 100%);
+              background: linear-gradient(to bottom, #ffacac 0%, #e3369b 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color_start, endColorstr=$color_end, GradientType=1 ); }
             .roadmap .map .item .dashboard .icons a.youtube:after {
               background-image: url("../img/youtube_social.png"); }
+            .roadmap .map .item .dashboard .icons a.linkedin:hover:before {
+              background: #aaf37d;
+              background: -moz-linear-gradient(top, #aaf37d, #00aaa4 100%);
+              background: -webkit-gradient(left top, left bottom, color-stop(0%, #aaf37d), color-stop(100%, #00aaa4));
+              background: -webkit-linear-gradient(left, #aaf37d 0%, #00aaa4 100%);
+              background: -o-linear-gradient(left, #aaf37d 0%, #00aaa4 100%);
+              background: -ms-linear-gradient(left, #aaf37d 0%, #00aaa4 100%);
+              background: linear-gradient(to bottom, #aaf37d 0%, #00aaa4 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color_start, endColorstr=$color_end, GradientType=1 ); }
             .roadmap .map .item .dashboard .icons a.linkedin:after {
               background-image: url("../img/linkedin_social.png"); }
+            .roadmap .map .item .dashboard .icons a.git:hover:before {
+              background: #cd35ab;
+              background: -moz-linear-gradient(top, #cd35ab, #5e38f8 100%);
+              background: -webkit-gradient(left top, left bottom, color-stop(0%, #cd35ab), color-stop(100%, #5e38f8));
+              background: -webkit-linear-gradient(left, #cd35ab 0%, #5e38f8 100%);
+              background: -o-linear-gradient(left, #cd35ab 0%, #5e38f8 100%);
+              background: -ms-linear-gradient(left, #cd35ab 0%, #5e38f8 100%);
+              background: linear-gradient(to bottom, #cd35ab 0%, #5e38f8 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color_start, endColorstr=$color_end, GradientType=1 ); }
             .roadmap .map .item .dashboard .icons a.git:after {
               background-image: url("../img/git_social.png"); }
         .roadmap .map .item .dashboard .progress {
